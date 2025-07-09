@@ -34,13 +34,12 @@ source myenv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
-
-### 5.Open the Web App
+### 4.Run the Flask App
 ```bash
 python app.py
 ```
 
-### 4.Run the Flask App
+### 5.Open the Web App
 Go to http://127.0.0.1:5000 in your browser.
 
 ---
