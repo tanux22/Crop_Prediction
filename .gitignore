@@ -1,0 +1,29 @@
+# ❌ Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# ❌ Virtual environment
+myenv/
+venv/
+
+# ❌ VS Code settings (optional)
+.vscode/
+
+# ❌ OS-specific files
+.DS_Store
+Thumbs.db
+
+# ❌ Model files (optional: only if large or private)
+*.pkl
+*.h5
+*.joblib
+
+# ❌ Jupyter Notebook checkpoints (if you're using .ipynb files)
+.ipynb_checkpoints/
+
+# ❌ Log files or temporary outputs
+*.log
+*.tmp
+*.bak
