@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crop Predictor</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>🌾 Crop Prediction Model</h1>
+    <form action="{{ url_for('predict') }}" method="post">
+      <input type="text" name="Nitrogen" placeholder="Nitrogen" required />
+      <input type="text" name="Phosphorus" placeholder="Phosphorus" required />
+      <input type="text" name="Potassium" placeholder="Potassium" required />
+      <input type="text" name="temperature" placeholder="Temperature (°C)" required />
+      <input type="text" name="humidity" placeholder="Humidity (%)" required />
+      <input type="text" name="pH" placeholder="pH" required />
+      <input type="text" name="rainfall" placeholder="Rainfall (mm)" required />
+      <input type="submit" value="Predict">
+    </form>
+
+    {% if prediction_text %}
+      <h1 id="pred">{{ prediction_text }}</h1>
+    {% endif %}
+  </div>
+</body>
+</html>
